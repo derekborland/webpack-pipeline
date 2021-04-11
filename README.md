@@ -1,6 +1,13 @@
 # webpack-pipeline
 Asset Pipeline
 
-```npm run dev```
+```sh
+npm run dev
+```
 
-```npm run prod```
+```sh
+npm run prod
+```
+
+# stylelint
+SCSS lint based on [https://sass-guidelin.es/](https://sass-guidelin.es/).
