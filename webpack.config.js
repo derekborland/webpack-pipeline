@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -10,9 +11,6 @@ module.exports = {
   externals: {
     jquery: 'jQuery',
   },
-  // @todo:
-  // Add support for more file types
-  // Add linting
   module: {
     rules: [{
       test: /\.js$/,

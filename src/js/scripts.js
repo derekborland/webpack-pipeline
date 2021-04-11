@@ -1,32 +1,33 @@
-(function(){
-  console.log('Hello World!');
+import $ from 'jquery';
+import { square as sq } from './modules/shape.js';
 
-  const materials = [
-    'Hydrogen',
-    'Helium',
-    'Lithium',
-    'Beryllium'
-  ];
+sq(100);
+console.log('Hello World!');
 
-  console.log(materials.map(material => material.length));
-  // expected output: Array [8, 6, 7, 9]
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
 
-  // es6 class
-  class Rectangle {
-    constructor(height, width) {
-      this.height = height;
-      this.width = width;
-    }
+console.log(materials.map(material => material.length));
 
-    get area() {
-      return this.calcArea();
-    }
-
-    calcArea() {
-      return this.height * this.width;
-    }
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
   }
-  const square = new Rectangle(10, 10);
-  console.log(square.area); // 100
 
-})();
+  get area() {
+    return this.calcArea();
+  }
+
+  calcArea() {
+    return this.height * this.width;
+  }
+}
+const square = new Rectangle(10, 10);
+console.log(square.area);
+
+$('body').css('background', '#aaa');
