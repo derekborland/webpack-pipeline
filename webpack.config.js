@@ -34,12 +34,17 @@ module.exports = {
         loader: 'postcss-loader',
         options: {
           sourceMap: true,
+          postcssOptions: {
+            plugins: [
+              ['postcss-preset-env'],
+            ],
+          }
         }
       }, {
         loader: 'sass-loader',
         options: {
-          implementation: require('sass'),
           sourceMap: true,
+          implementation: require('sass'),
         }
       }]
     }]
