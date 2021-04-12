@@ -1,0 +1,4 @@
+<FilesMatch "^(.eslintrc.json|.gitignore|package.json|package-lock.json|webpack.config.js|webpack.dev.js|webpack.prod.js)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
